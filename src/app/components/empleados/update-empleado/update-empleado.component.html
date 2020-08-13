@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="display-4">EDITORIAL REY SOLIS</h1>
+        <hr class="my-4">
+        <p>MODIFICA LOS DATOS QUE NECESITES</p>
+    </div>
+    <form>
+
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>ID:</strong>  {{empleado.id}}        
+    </div>
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>CEDULA:</strong>  {{empleado.cedula}}        
+    </div>
+    
+
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>NOMBRE:</strong>   
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="nombre" [(ngModel)]="empleado.nombre"  class="form-control" placeholder="Introduce el nuevo nombre"  >
+    <br><hr>
+
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>APELLIDOS:</strong>    
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="apellidos" [(ngModel)]="empleado.apellidos"  class="form-control" placeholder="Introduce los nuevos"  >
+    <br><hr>
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>TELEFONO:</strong>          
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="telefono" [(ngModel)]="empleado.telefono"  class="form-control" placeholder="Introduce el nuevo numero de telefono"  >
+    <br><hr>
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>CORREO:</strong>     
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="email" [(ngModel)]="empleado.email"  class="form-control" placeholder="Introduce el nuevo correo"  >
+    <br><hr>
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>DIRECCION:</strong>      
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="direccion" [(ngModel)]="empleado.direccion"  class="form-control" placeholder="Introduce la nueva direccion"  >
+    <br><hr>
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>CIUDAD:</strong>       
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="ciudad" [(ngModel)]="empleado.ciudad"  class="form-control" placeholder="Introduce la nueva ciudad"  >
+    <br><hr>
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>ROL:</strong>         
+    </div>    
+    <input type="text" rauterLinkActive="Active" name="rol" [(ngModel)]="empleado.rol"  class="form-control" placeholder="Introduce el nuevo rol"  >
+    <br><hr>
+
+
+    <button class="btn btn-success btn-block" (click)="updateEmpleado()"  >ACTUALIZAR</button>
+                
+            
+        
+        </form>
+        </div>
+             
+
